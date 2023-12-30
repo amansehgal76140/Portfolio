@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Toolbar } from "@mui/material";
+import About from "./components/About";
+import Header from "./components/Header";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Toolbar />
+      <section id="section0">
+        <About />
+      </section>
+      <section id="section1">
+        <Experience />
+      </section>
+      <section id="section2">
+        <Projects />
+      </section>
+      <section id="section3">
+        <Education />
+      </section>
+      <Footer />
     </div>
   );
 }
