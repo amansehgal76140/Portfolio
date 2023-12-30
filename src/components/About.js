@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Grid from "@mui/material/Grid";
 import profileImage from "../images/Profile.jpeg";
 import Box from "@mui/material/Box";
@@ -14,7 +14,7 @@ function About() {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [textIndex, setTextIndex] = useState(0);
-  const text = ["Full Stack Developer", "React Developer"];
+  const text = useMemo(() => ["Full Stack Developer", "React Developer"], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,7 +31,7 @@ function About() {
     return () => {
       clearInterval(interval);
     };
-  }, [currentIndex]);
+  }, [currentIndex, text, textIndex]);
 
   return (
     <Box style={{ backgroundColor: "#FFE5E1", color: "#333333" }} p={4}>

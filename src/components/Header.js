@@ -27,7 +27,7 @@ function Header(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2, color: "#fff" }}>
+      <Typography variant="h5" sx={{ my: 2, color: "#fff" }}>
         Portfolio
       </Typography>
       <Divider sx={{ backgroundColor: "#659DBD" }} />
