@@ -1,4 +1,16 @@
+
 const experience = [
+  {
+    role: "Software Engineer Intern",
+    description: [
+      "Created a WPF Application using MVVM Architecture for Build Chronos, enhancing accessibilty for users unfamiliar with CLI.",
+      "Developed new end points and integrated them with UI to identify and extract changes in specific baselines.",
+      "Implemented Features to track build status, save current state as new baseline and switch between baselines, reducing manual tracking efforts and improving user efficiency."
+    ],
+    company_name: "KLA Tencor",
+    time: "May 2024 - July 2024",
+    duration: "2 months"
+  },
   {
     role: "Software Development Engineer Intern",
     description: [
@@ -10,29 +22,27 @@ const experience = [
     time: "May 2021 - August 2021",
     duration: "3 months",
   },
-  {
-    role: "Full Stack Developer",
-    description: [
-      "Developed an advanced web application designed to streamline operations for a construction company.",
-      "The application primarily focuses on managing suppliers and creating requisition quotes.",
-      "The admin panel allows the company's administrators to efficiently add, update, and delete suppliers from the system.",
-      "A key feature of the project is the creation of requisition quotes. Admins can specify the items, quantities, and sizes required for construction projects.",
-      "Suppliers are provided access to the system, where they can view and fill out quotes, offering their pricing information for the required materials.",
-      "Upon submission of quotes by suppliers, the admin gains access to a comprehensive price comparison statement.",
-      "The price comparison statement facilitates a side-by-side analysis of quotes received from various suppliers, empowering the admin to make informed decisions based on cost-effectiveness.",
-    ],
-    company_name: "ELGC",
-    time: "May 2023 - July 2023",
-    duration: "2 months",
-    technology: ["React.js", "Node.js", "Express.js", "MySQL"],
-  },
+  
 ];
 const Project = [
   {
-    name: "Covid-19 Tracker",
-    description:
-      "I developed a web application using React.js and MUI, where I utilized API data to showcase COVID-19 statistics such as the number of infections, recoveries, and deaths." +
-      "The application featured a user-friendly interface with a bar graph visualizing the data for individual countries as well as the global statistics.",
+    name: "ELGC Admin Panel(Freelance Project)",
+    description: [
+      "Developed a comprehensive lead and database management dashboard, enhancing data organization and accessibility.",
+      "Implemented functionality allow administrator to create requisition quotes, streamlining the procurement process.",
+      "Provided a platform to send emails to send email to supplier with form links, resulting in a 40% increase in supplier response rates.",
+      "Enabled Comparision of item prices quoted by different suppliers, improving price competitiveness and saving an average of 15% on procurement costs."
+    ],
+    Technologies: ["React", "Node", "Express", "MySQL"]
+  },
+  {
+    name: "Share Memories",
+    description: [
+      "Created an Application that enable users to share their travel experiences from various destinations.",
+      "Implemented Features allow users to view, like, and comment on travel memories shared by others.",
+      "Provided users with the ability to search for specific travel memories, enhancing user engagement and content discoverability."
+    ],
+    Technologies: ["React", "Node", "Express", "Mongodb"]  
   },
 ];
 const skills = [
@@ -49,20 +59,21 @@ const skills = [
   "MySQL",
   "Data Structures and Algorithm",
   "C#",
+  "WPF"
 ];
 const about = {
   description:
-    " I'm a highly motivated and passionate computer science student" +
-    "with a strong foundation in web technologies. I am a quick" +
-    "learner and always ready to learn new technologies. I am eager" +
-    "to contribute to innovative projects and further expand my" +
+    " I'm a highly motivated and passionate computer science student " +
+    "with a strong foundation in web technologies. I am a quick " +
+    "learner and always ready to learn new technologies. I am eager " +
+    "to contribute to innovative projects and further expand my " +
     "skills in the field of Computer Science.",
 };
 const education = [
   {
     course: "Masters of Computer Applications",
     college: "National Institute of Technology Karnataka",
-    CGPA: "9.11",
+    CGPA: "8.88",
     time: "08/2022 - Present",
   },
   {

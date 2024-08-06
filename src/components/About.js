@@ -67,7 +67,7 @@ function About() {
                       color: "#fff",
                       textDecoration: "none",
                     }}
-                    href="https://drive.google.com/file/d/12lBES-EI3kfVJCB2TqaB7TAGCtDGtzYM/view"
+                    href="https://drive.google.com/file/d/1FD160KI1olUESK-lU1Bb7vvF7U7sVCug/view?usp=drivesdk"
                   >
                     Check Resume
                   </Link>
@@ -117,3 +117,4 @@ function About() {
 }
 
 export default About;
+//https://drive.google.com/file/d/1FD160KI1olUESK-lU1Bb7vvF7U7sVCug/view?usp=drivesdk

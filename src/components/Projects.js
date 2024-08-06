@@ -14,9 +14,21 @@ function Projects() {
             <Typography variant="h5" style={{ color: "GrayText" }}>
               {currProject.name}
             </Typography>
-            <Typography variant="body1" style={{ marginTop: "16px" }}>
-              {currProject.description}
-            </Typography>
+            <Box mt={2}>
+              <ul>
+                {currProject.description.map((task, index) => (
+                  <li key={index}>{task}</li>
+                ))}
+              </ul>
+            </Box>
+            <Box mt={1} display={"flex"}>
+                <Typography variant="body2" style={{ color: "GrayText", marginRight: "8px" }}>Technologies Used:-  </Typography>
+                <Typography variant={"body2"}>
+                {currProject.Technologies.map((tech, index)=>{
+                  return <span key={index}>{tech}{index < 3 ? ", " : "."}</span>
+                })} 
+                </Typography>
+            </Box>
           </Box>
         );
       })}
